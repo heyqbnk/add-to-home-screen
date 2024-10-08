@@ -1,0 +1,25 @@
+:root {
+  --background: white;
+  --text-color: black;
+}
+
+body {
+  font-family: -apple-system, BlinkMacSystemFont, 'SF Pro', 'Roboto', 'Oxygen',
+  'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+  sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  line-height: 1.5;
+
+  background: var(--background, white);
+  color: var(--text-color, black);
+  padding: 0;
+  margin: 0;
+}
+
+@media screen and (prefers-color-scheme: dark) {
+  :root {
+    --background: #1a1a1a;
+    --text-color: white;
+  }
+}

@@ -1,0 +1,73 @@
+.app {
+  max-width: 358px;
+  padding: 0 16px;
+  margin: 0 auto;
+}
+
+.app__icon {
+  display: block;
+  margin: 40px auto 20px;
+  border-radius: 16px;
+}
+
+.app__title {
+  font-size: 34px;
+  font-weight: 700;
+  line-height: 40px;
+  padding: 0 16px;
+  text-align: center;
+  margin: 0;
+}
+
+.app__subtitle {
+  font-size: 17px;
+  line-height: 22px;
+  text-align: center;
+  font-weight: 400;
+  margin: 12px 0 40px;
+}
+
+.app__list {
+  margin: 0 auto;
+  padding: 0 16px;
+  list-style-position: inside;
+  font-size: 17px;
+  line-height: 22px;
+}
+
+.app__list-item {
+  margin: 4px 0 28px;
+}
+
+.app__share-icon {
+  vertical-align: sub;
+  display: inline-block;
+  margin: 0 6px;
+}
+
+.app__img-container {
+  position: relative;
+  margin-top: 12px;
+  overflow: hidden;
+  border-radius: 24px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-shadow: 0 0 1px 0 rgba(0, 0, 28, 0.12), 0 2px 28px 0 rgba(0, 0, 28, 0.06);
+}
+
+.app__img-mask {
+  position: absolute;
+  width: 100%;
+  opacity: 0.2;
+  top: 0;
+}
+
+.app__img {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 100%;
+  min-height: 100%;
+}
