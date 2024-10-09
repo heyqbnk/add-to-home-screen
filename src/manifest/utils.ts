@@ -1,5 +1,5 @@
 import { getManifestRequiredParams } from '@/manifest/getManifestRequiredParams.js';
-import type { Manifest, ManifestIcon } from '@/manifest/types.js';
+import type { Manifest } from '@/manifest/types.js';
 import { getAnySizeIcon } from '@/manifest/getAnySizeIcon.js';
 import { getSvgIcon } from '@/manifest/getSvgIcon.js';
 
