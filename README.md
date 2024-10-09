@@ -30,3 +30,26 @@ Screen.
 The created Home Screen link includes a `redirect_url` query parameter, set to the
 specified `redirect_to` URL. Upon being opened, the page automatically redirects the user to this
 URL.
+
+## Testing
+
+To create valid query parameters, you may try this code:
+
+```ts
+// Construct query parameters.
+const params = new URLSearchParams([
+  ['manifest', JSON.stringify({
+    name: 'Mini Apps Docs',
+    icons: [{
+      src: 'https://docs.telegram-mini-apps.com/logo.db0268ac.png',
+      sizes: '48x48',
+      purpose: 'any',
+      type: 'image/png'
+    }]
+  })],
+  ['redirect_to', 'https://docs.telegram-mini-apps.com']
+]);
+
+// Output: ?manifest=...&redirect_to=...
+console.log('?' + params.toString());
+```
